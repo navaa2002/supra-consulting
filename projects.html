@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | Supra Consulting</title>
+<meta name="description" content="Browse Supra Consulting's project portfolio across engineering, survey, inspection and project management disciplines.">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav class="site-nav" id="site-nav"></nav>
+
+<header class="page-header">
+  <div class="hero-grid"></div>
+  <div class="container">
+    <div class="breadcrumb">HOME <span>/</span> PROJECTS</div>
+    <div class="eyebrow">Portfolio</div>
+    <h1>420+ projects, engineered and measured across Sri Lanka.</h1>
+    <p>Filter by discipline or search by name to explore our completed work.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head" style="margin-bottom:34px;align-items:center;">
+      <div class="filter-bar">
+        <button class="chip active" data-filter="all">All Projects</button>
+        <button class="chip" data-filter="engineering">Engineering</button>
+        <button class="chip" data-filter="survey">Survey</button>
+        <button class="chip" data-filter="management">Project Mgmt</button>
+        <button class="chip" data-filter="inspection">Inspections</button>
+      </div>
+      <div class="search-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3" stroke-linecap="round"/></svg>
+        <input type="text" id="project-search" placeholder="Search projects…">
+      </div>
+    </div>
+    <div class="grid grid-3 stagger" id="projects-grid"></div>
+  </div>
+</section>
+
+<footer id="site-footer"></footer>
+<script src="assets/js/api.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

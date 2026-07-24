@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Testimonials | Supra Consulting</title>
+<meta name="description" content="Read what clients say about working with Supra Consulting on engineering, survey and inspection projects.">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+.rating-summary{display:flex;align-items:center;gap:28px;background:var(--navy);border-radius:16px;padding:36px 40px;flex-wrap:wrap;}
+.rating-big{font-family:'Fraunces',serif;font-size:56px;color:var(--gold-2);font-weight:600;}
+.rating-bar-row{display:flex;align-items:center;gap:10px;font-size:12.5px;color:rgba(255,255,255,0.6);font-family:'IBM Plex Mono',monospace;}
+.rating-bar{width:180px;height:6px;background:rgba(255,255,255,0.15);border-radius:6px;overflow:hidden;}
+.rating-bar span{display:block;height:100%;background:var(--gold);}
+.success-card{background:var(--bg-alt);border-radius:14px;padding:28px;border:1px solid var(--line);}
+.success-card .num{font-family:'Fraunces',serif;font-size:32px;color:var(--emerald);}
+</style>
+</head>
+<body>
+
+<nav class="site-nav" id="site-nav"></nav>
+
+<header class="page-header">
+  <div class="hero-grid"></div>
+  <div class="container">
+    <div class="breadcrumb">HOME <span>/</span> TESTIMONIALS</div>
+    <div class="eyebrow">Client Feedback</div>
+    <h1>Trusted by developers, agencies and asset owners.</h1>
+    <p>98% of our clients rate their experience 5 stars. Here's why.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="rating-summary reveal">
+      <div style="text-align:center;">
+        <div class="rating-big">4.9</div>
+        <div class="stars" style="justify-content:center;color:var(--gold);">★★★★★</div>
+        <div style="color:rgba(255,255,255,0.6);font-size:12.5px;margin-top:4px;">186 reviews</div>
+      </div>
+      <div class="divider-v" style="height:70px;background:rgba(255,255,255,0.15);"></div>
+      <div style="display:grid;gap:8px;flex:1;min-width:220px;">
+        <div class="rating-bar-row"><span>5★</span><div class="rating-bar"><span style="width:88%;"></span></div><span>88%</span></div>
+        <div class="rating-bar-row"><span>4★</span><div class="rating-bar"><span style="width:9%;"></span></div><span>9%</span></div>
+        <div class="rating-bar-row"><span>3★</span><div class="rating-bar"><span style="width:2%;"></span></div><span>2%</span></div>
+        <div class="rating-bar-row"><span>2★</span><div class="rating-bar"><span style="width:1%;"></span></div><span>1%</span></div>
+        <div class="rating-bar-row"><span>1★</span><div class="rating-bar"><span style="width:0%;"></span></div><span>0%</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="container">
+    <div class="grid grid-3 stagger" data-testimonials-grid></div>
+  </div>
+</section>
+
+<!-- SUCCESS STORIES -->
+<section class="section" style="background:var(--bg-alt);">
+  <div class="container">
+    <div class="section-head"><div><div class="eyebrow">Success Stories</div><h2>Outcomes, Not Just Opinions</h2></div></div>
+    <div class="grid grid-3 stagger">
+      <div class="success-card reveal"><div class="num">9%</div><p style="margin-top:8px;">Cost savings identified through value-engineering review on the Southern Expressway extension, without compromising design life.</p></div>
+      <div class="success-card reveal"><div class="num">3 wks</div><p style="margin-top:8px;">Ahead of schedule delivery for the Hambantota Logistics Park project management engagement.</p></div>
+      <div class="success-card reveal"><div class="num">210k</div><p style="margin-top:8px;">Residents served by the Jaffna water treatment plant upgrade we managed from procurement to commissioning.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer id="site-footer"></footer>
+<script src="assets/js/api.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

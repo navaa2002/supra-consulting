@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | Supra Consulting</title>
+<meta name="description" content="Engineering consulting, survey services, project management, structural inspections and professional reports from Supra Consulting.">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+.service-detail{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;padding:90px 0;border-bottom:1px solid var(--line);}
+.service-detail:nth-child(even) .sd-img{order:2;}
+@media (max-width:900px){.service-detail{grid-template-columns:1fr;gap:32px;padding:56px 0;}.service-detail:nth-child(even) .sd-img{order:0;}}
+.sd-list{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:12px;}
+.sd-list li{display:flex;gap:12px;font-size:14.5px;color:var(--ink-soft);align-items:flex-start;}
+.sd-list svg{width:18px;height:18px;flex:none;margin-top:2px;stroke:var(--emerald);}
+</style>
+</head>
+<body>
+
+<nav class="site-nav" id="site-nav"></nav>
+
+<header class="page-header">
+  <div class="hero-grid"></div>
+  <div class="container">
+    <div class="breadcrumb">HOME <span>/</span> SERVICES</div>
+    <div class="eyebrow">What We Do</div>
+    <h1>Full-service engineering, survey and consulting under one roof.</h1>
+    <p>Five specialist disciplines, one accountable team. Every service is delivered by chartered professionals and backed by a written scope, timeline and fee.</p>
+  </div>
+</header>
+
+<section class="section" style="padding-bottom:0;">
+  <div class="container">
+     <div id="servicesPageContainer">
+      
+     </div>
+      </div>
+</section>
+
+<!-- SERVICE DETAIL CARDS -->
+<section class="section" style="background:var(--bg-alt);">
+  <div class="container">
+    <div class="section-head"><div><div class="eyebrow">At a Glance</div><h2>Every Service, One Page</h2></div></div>
+    <div class="grid grid-3 stagger" data-services-grid data-append-cta>
+      <div class="dark-card reveal" data-cta-card style="display:none;"><h3>Not sure what you need?</h3><p>Tell us about your site and we'll recommend the right combination of services.</p><a href="contact.html" class="btn btn-primary" style="margin-top:8px;">Talk to an Engineer</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE MODAL -->
+<div id="service-modal" class="modal-overlay">
+    <div id="service-modal-box" class="modal-box"></div>
+</div>
+
+
+<!-- Quote Modal -->
+<div id="quoteModal" class="modal-overlay" style="display:none;">
+  <div class="modal-box">
+
+    <span id="closeQuoteModal" style="float:right;font-size:28px;cursor:pointer;">&times;</span>
+
+    <h2 id="quoteTitle">Request This Service</h2>
+
+    <form id="quoteForm">
+
+<input
+type="text"
+id="quoteName"
+placeholder="Your Name"
+required>
+
+<input
+type="email"
+id="quoteEmail"
+placeholder="Email Address"
+required>
+
+<input
+type="text"
+id="quotePhone"
+placeholder="Phone Number">
+
+<input
+type="text"
+id="quoteService"
+readonly
+style="background:#f7f7f7;font-weight:600;">
+
+<textarea
+id="quoteMessage"
+rows="5"
+placeholder="Message"></textarea>
+
+<button
+type="submit"
+class="btn btn-primary">
+
+Send Request
+
+</button>
+
+</form>
+
+  </div>
+</div>
+
+<footer id="site-footer"></footer>
+<script src="assets/js/api.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

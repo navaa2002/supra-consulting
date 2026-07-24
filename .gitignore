@@ -1,0 +1,11 @@
+# Dependencies
+node_modules/
+
+# Secrets
+backend/.env
+
+# User-uploaded images (Render's free-tier disk is ephemeral, so these
+# shouldn't be relied on in git anyway — see README for a persistent
+# storage option)
+backend/uploads/*
+!backend/uploads/.gitkeep
