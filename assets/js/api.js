@@ -22,7 +22,7 @@ const isLocal =
 // 👇 EDIT THIS after deploying the backend (e.g. on Render): paste the live
 // backend URL here, no trailing slash. Example:
 // const PRODUCTION_API_BASE = "https://supra-consulting-api.onrender.com";
-const PRODUCTION_API_BASE = "";
+const PRODUCTION_API_BASE = "https://navaa-bn6tdvlm.b4a.run/";
 
 const API_BASE = isLocal ? "http://localhost:5000" : PRODUCTION_API_BASE;
 
